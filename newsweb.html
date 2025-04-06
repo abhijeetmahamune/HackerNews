@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker News</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="y18.svg">
+</head>
+<body>
+    <header>
+        <!-- <div class="container"> -->
+            <a href="https://news.ycombinator.com" class="logo">
+                <!-- <img src="y18.svg" alt="Hacker News Logo"> -->
+                <h2 class="title">Hacker News</h2>
+            </a>
+            <!-- <nav>
+                <ul>
+                    <div class="topnav">
+                    <a class="active" href="newest">New</a>
+                    <a class="nav-item" href="front">Past</a>
+                    <a class="nav-item" href="newcomments">Comments</a>
+                    <a class="nav-item" href="ask">Ask</a>
+                    <a class="nav-item" href="show">Show</a>
+                    <a class="nav-item" href="jobs">Jobs</a>
+                    <a class="nav-item" href="submit">Submit</a>
+                    </div>
+                </ul>
+            </nav> -->
+            <!-- Redesigned Navbar -->
+<nav class="topnav">
+    <div class="nav-container">
+      <!-- <div class="nav-title">📰 NewsPortal</div> -->
+      <div class="nav-links" id="navLinks">
+        <a href="#" class="active">Home</a>
+        <a href="#">Top</a>
+        <a href="#">Ask</a>
+        <a href="#">Show</a>
+        <a href="#">Jobs</a>
+     
+      </div>
+      <button class="nav-toggle" onclick="toggleNav()">☰</button>
+    </div>
+  </nav>
+   <a href="login.html"><button class="login-btn">Login</button></a>
+   <a href="login.html"><button class="login-btn">Sign Up</button></a>
+  <script>
+    function toggleNav() {
+      const links = document.getElementById("navLinks");
+      links.classList.toggle("show-nav");
+    }
+  </script>  
+           <!-- <button> <a href="login.html" >Login</a></button> -->
+           <!-- <button class="login-btn" onclick="openLink()">Login</button>
+
+           <script>
+               function openLink() {
+                   window.location.href = "https://www.google.com";  // Change URL here
+               }
+           </script> -->
+        <!-- </div> -->
+    </header>
+    
+    <main class="container">
+        <section class="news-list">
+            <article class="news-item">
+                <span class="rank">1.</span>
+                <a href="https://www.turing.ac.uk/blog/project-aardvark-reimagining-ai-weather-prediction" class="news-title">English Scientists Develop Fast, High-Quality AI Weather Model for Desktops</a>
+                <span class="source">(turing.ac.uk)</span>
+                <div class="news-meta">
+                    <span class="score">82 points</span> | <span class="author">by bentobean</span> | <span class="time">3 hours ago</span> | <a href="#">32 comments</a>
+                </div>
+            </article>
+            <article class="news-item">
+                <span class="rank">2.</span>
+                <a href="https://chipsandcheese.com/p/rdna-4s-out-of-order-memory-accesses" class="news-title">RDNA 4's “Out-of-Order” Memory Accesses</a>
+                <span class="source">(chipsandcheese.com)</span>
+                <div class="news-meta">
+                    <span class="score">82 points</span> | <span class="author">by ingve</span> | <span class="time">5 hours ago</span> | <a href="#">7 comments</a>
+                </div>
+            </article>
+
+<article class="news-item">
+    <span class="rank">5.</span>
+    <a href="https://www.righto.com/2025/03/mother-of-all-demos-usb-keyset-interface.html" class="news-title">A USB Interface to the "Mother of All Demos" Keyset</a>
+    <span class="source">(righto.com)</span>
+    <div class="news-meta">
+        <span class="score">225 points</span> | <span class="author">by zdw</span> | <span class="time">11 hours ago</span> | <a href="#">55 comments</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">6.</span>
+    <a href="https://apps.apple.com/us/app/notes-sight-reading-trainer/id874386416" class="news-title">Show HN: My iOS app to practice sight reading (10 years in the App Store)</a>
+    <span class="source">(apps.apple.com)</span>
+    <div class="news-meta">
+        <span class="score">165 points</span> | <span class="author">by rooster117</span> | <span class="time">5 hours ago</span> | <a href="#">60 comments</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">7.</span>
+    <a href="https://fenrisk.com/pagure" class="news-title">Supply Chain Attacks on Linux Distributions – Fedora Pagure</a>
+    <span class="source">(fenrisk.com)</span>
+    <div class="news-meta">
+        <span class="score">112 points</span> | <span class="author">by akyuu</span> | <span class="time">9 hours ago</span> | <a href="#">22 comments</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">8.</span>
+    <a href="https://mo8it.com/blog/quadlet/" class="news-title">Quadlet: Running Podman containers under systemd</a>
+    <span class="source">(mo8it.com)</span>
+    <div class="news-meta">
+        <span class="score">23 points</span> | <span class="author">by gjvc</span> | <span class="time">2 hours ago</span> | <a href="#">2 comments</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">9.</span>
+    <a href="https://www.inaturalist.org/projects/first-known-photographs-of-living-specimens" class="news-title">First Known Photographs of Living Specimens</a>
+    <span class="source">(inaturalist.org)</span>
+    <div class="news-meta">
+        <span class="score">68 points</span> | <span class="author">by Morizero</span> | <span class="time">8 hours ago</span> | <a href="#">14 comments</a>
+    </div>
+</article>
+<article class="news-item">
+    <span class="rank">10.</span>
+    <a href="https://www.inaturalist.org/projects/first-known-photographs-of-living-specimens" class="news-title">Play the Virtual Organ from Arp Schnitger</a>
+    <span class="source">(inaturalist.org)</span>
+    <div class="news-meta">
+        <span class="score">83 points</span> | <span class="author">by ohjeez</span> | <span class="time">8 hours ago</span> | <a href="#">11 comments</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">11.</span>
+    <a href="https://www.orgelstadt-hamburg.de/play-arp/" class="news-title">Play the Virtual Organ from Arp Schnitger</a>
+    <span class="source">(orgelstadt-hamburg.de)</span>
+    <div class="news-meta">
+        <span class="score">83 points</span> | <span class="author">by ohjeez</span> | <span class="time">8 hours ago</span> | <a href="item?id=43454785">11 comments</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">12.</span>
+    <a href="http://drumpatterns.onether.com" class="news-title">Show HN: I built website for sharing Drum Patterns</a>
+    <span class="source">(onether.com)</span>
+    <div class="news-meta">
+        <span class="score">242 points</span> | <span class="author">by wesz</span> | <span class="time">14 hours ago</span> | <a href="item?id=43452629">90 comments</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">13.</span>
+    <a href="https://iopscience.iop.org/article/10.3847/2041-8213/adb433" class="news-title">Andromeda XXXV: The Faintest Dwarf Satellite of the Andromeda Galaxy</a>
+    <span class="source">(iop.org)</span>
+    <div class="news-meta">
+        <span class="score">29 points</span> | <span class="author">by PaulHoule</span> | <span class="time">7 hours ago</span> | <a href="item?id=43420167">9 comments</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">14.</span>
+    <a href="https://github.com/langmanus/langmanus" class="news-title">LangManus: An Open-Source Manus Agent with LangChain + LangGraph</a>
+    <span class="source">(github.com/langmanus)</span>
+    <div class="news-meta">
+        <span class="score">32 points</span> | <span class="author">by gfortaine</span> | <span class="time">6 hours ago</span> | <a href="item?id=43434171">5 comments</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">15.</span>
+    <a href="https://eugeneyan.com/writing/recsys-llm/" class="news-title">Improving recommendation systems and search in the age of LLMs</a>
+    <span class="source">(eugeneyan.com)</span>
+    <div class="news-meta">
+        <span class="score">341 points</span> | <span class="author">by 7d7n</span> | <span class="time">23 hours ago</span> | <a href="item?id=43450732">82 comments</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">16.</span>
+    <a href="https://github.com/tdewolff/argp" class="news-title">argp: GNU-style command line argument parser for Go</a>
+    <span class="source">(github.com/tdewolff)</span>
+    <div class="news-meta">
+        <span class="score">147 points</span> | <span class="author">by networked</span> | <span class="time">14 hours ago</span> | <a href="item?id=43452525">63 comments</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">17.</span>
+    <a href="https://www.bbc.com/future/article/20250319-spaghetti-science-what-pasta-reveals-about-the-universe" class="news-title">Spaghetti science: What pasta reveals about the universe</a>
+    <span class="source">(bbc.com)</span>
+    <div class="news-meta">
+        <span class="score">8 points</span> | <span class="author">by pseudolus</span> | <span class="time">3 hours ago</span> | <a href="item?id=43425649">discuss</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">18.</span>
+    <a href="https://rocm.blogs.amd.com/software-tools-optimization/aiter:-ai-tensor-engine-for-rocm™/README.html" class="news-title">Aiter: AI Tensor Engine for ROCm</a>
+    <span class="source">(amd.com)</span>
+    <div class="news-meta">
+        <span class="score">7 points</span> | <span class="author">by hochmartinez</span> | <span class="time">4 hours ago</span> | <a href="item?id=43451968">discuss</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">19.</span>
+    <a href="https://simonschreibt.de/gat/homeworld-2-backgrounds/" class="news-title">Technicalities of Homeworld 2 Backgrounds</a>
+    <span class="source">(simonschreibt.de)</span>
+    <div class="news-meta">
+        <span class="score">146 points</span> | <span class="author">by todsacerdoti</span> | <span class="time">14 hours ago</span> | <a href="item?id=43452688">42 comments</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">20.</span>
+    <a href="https://lrtimelapse.com/news/total-lunar-eclipse-over-teide-crater-tenerife/" class="news-title">Total lunar eclipse over Teide crater, Tenerife – a project with many obstacles</a>
+    <span class="source">(lrtimelapse.com)</span>
+    <div class="news-meta">
+        <span class="score">49 points</span> | <span class="author">by elijahparker</span> | <span class="time">9 hours ago</span> | <a href="item?id=43436551">discuss</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">21.</span>
+    <a href="https://dannorth.net/the-worst-programmer/" class="news-title">The Worst Programmer I Know (2023)</a>
+    <span class="source">(dannorth.net)</span>
+    <div class="news-meta">
+        <span class="score">351 points</span> | <span class="author">by rbanffy</span> | <span class="time">14 hours ago</span> | <a href="item?id=43452649">254 comments</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">22.</span>
+    <a href="https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_opens_data_treasure_trove_offers_glimpse_of_deep_fields" class="news-title">Euclid opens data treasure trove, offers glimpse of deep fields</a>
+    <span class="source">(esa.int)</span>
+    <div class="news-meta">
+        <span class="score">79 points</span> | <span class="author">by layer8</span> | <span class="time">17 hours ago</span> | <a href="item?id=43425855">16 comments</a>
+    </div>
+</article>
+<article class="news-item">
+    <span class="rank">17.</span>
+    <a href="https://www.bbc.com/future/article/20250319-spaghetti-science-what-pasta-reveals-about-the-universe" class="news-title">Spaghetti science: What pasta reveals about the universe</a>
+    <span class="source">(bbc.com)</span>
+    <div class="news-meta">
+        <span class="score">8 points</span> | <span class="author">by pseudolus</span> | <span class="time">3 hours ago</span> | <a href="#">discuss</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">18.</span>
+    <a href="https://rocm.blogs.amd.com/software-tools-optimization/aiter:-ai-tensor-engine-for-rocm™/README.html" class="news-title">Aiter: AI Tensor Engine for ROCm</a>
+    <span class="source">(amd.com)</span>
+    <div class="news-meta">
+        <span class="score">7 points</span> | <span class="author">by hochmartinez</span> | <span class="time">4 hours ago</span> | <a href="#">discuss</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">19.</span>
+    <a href="https://simonschreibt.de/gat/homeworld-2-backgrounds/" class="news-title">Technicalities of Homeworld 2 Backgrounds</a>
+    <span class="source">(simonschreibt.de)</span>
+    <div class="news-meta">
+        <span class="score">146 points</span> | <span class="author">by todsacerdoti</span> | <span class="time">14 hours ago</span> | <a href="#">42 comments</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">20.</span>
+    <a href="https://lrtimelapse.com/news/total-lunar-eclipse-over-teide-crater-tenerife/" class="news-title">Total lunar eclipse over Teide crater, Tenerife – a project with many obstacles</a>
+    <span class="source">(lrtimelapse.com)</span>
+    <div class="news-meta">
+        <span class="score">49 points</span> | <span class="author">by elijahparker</span> | <span class="time">9 hours ago</span> | <a href="#">discuss</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">21.</span>
+    <a href="https://dannorth.net/the-worst-programmer/" class="news-title">The Worst Programmer I Know (2023)</a>
+    <span class="source">(dannorth.net)</span>
+    <div class="news-meta">
+        <span class="score">351 points</span> | <span class="author">by rbanffy</span> | <span class="time">14 hours ago</span> | <a href="#">254 comments</a>
+    </div>
+</article>
+
+<article class="news-item">
+    <span class="rank">22.</span>
+    <a href="https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_opens_data_treasure_trove_offers_glimpse_of_deep_fields" class="news-title">Euclid opens data treasure trove, offers glimpse of deep fields</a>
+    <span class="source">(esa.int)</span>
+    <div class="news-meta">
+        <span class="score">79 points</span> | <span class="author">by layer8</span> | <span class="time">17 hours ago</span> | <a href="#">16 comments</a>
+    </div>
+</article>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hacker News. All rights reserved.</p> 
+        </div>
+    </footer>
+</body>
+</html>
+<!-- Pagination & Spacing
+<tr class="row-spacer" style="height: 5px;"></tr>
+<tr class="row-extra-space" style="height: 10px;"></tr>
+<tr>
+  <td colspan="2"></td>
+  <td class="pagination">
+    <a href="?p=2" class="btn-more" rel="next">More</a>
+  </td> -->
+</tr>
+</table>
+</td></tr>
+
+<!-- Footer Bar Separator -->
+<tr>
+  <td>
+    <div class="footer-separator" style="height: 10px;"></div>
+    <table class="divider" width="100%" cellspacing="0" cellpadding="1">
+      <tr>
+        <td class="divider-bar" bgcolor="#ff6600"></td>
+      </tr>
+    </table>
+    <br>
+
+    <!-- Event Promotion -->
+    <section class="event-promo">
+      <center>
+        Join us for <a href="https://events.ycombinator.com/ai-sus"><u>AI Startup School</u></a> this June 16–17 in San Francisco!
+      </center>
+    </section>
+    <br>
+
+    <!-- Footer Links and Search -->
+    <footer class="footer-links">
+      <center>
+        <nav class="link-group">
+          <a href="newsguidelines.html">Guidelines</a> |
+          <a href="newsfaq.html">FAQ</a> |
+          <a href="lists">Lists</a> |
+          <a href="https://github.com/HackerNews/API">API</a> |
+          <a href="security.html">Security</a> |
+          <a href="https://www.ycombinator.com/legal/">Legal</a> |
+          <a href="https://www.ycombinator.com/apply/">Apply to YC</a> |
+          <a href="mailto:hn@ycombinator.com">Contact</a>
+        </nav>
+        <br><br>
+
+        <!-- Search Box -->
+        <form class="search-form" method="get" action="//hn.algolia.com/">
+          <label for="search-input">Search:</label>
+          <input id="search-input" type="text" name="q" size="17"
+            autocorrect="off" spellcheck="false"
+            autocapitalize="off" autocomplete="off">
+        </form>
+      </center>
+    </footer>
+  </td>
+</tr>
+</table>
+</center>
+
+<!-- JS Script -->
+<script type="text/javascript" src="hn.js?mA0rO7wx5TlQORviHIeG"></script>
+</body>
+</html>
