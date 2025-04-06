@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+<style>
+    /* Login Form Styles */
+
+body{
+    background-color: #2a2a2a;
+}
+.login-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-title {
+  color: #ff9800;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.remember-me {
+  color: #b0b0b0;
+}
+
+.form-checkbox {
+  margin-right: 6px;
+}
+
+.forgot-link {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  color: #64b5f6;
+}
+
+.login-submit {
+  background-color: #f4511e;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-submit:hover {
+  background-color: #e9440f;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #b0b0b0;
+}
+
+.signup-text a {
+  color: #ff9800;
+  text-decoration: underline;
+}
+
+</style>
+
+
+</head>
+<body>
+    <div class="login-container">
+    <form class="login-form">
+      <h2 class="login-title">Login to Hacker News</h2>
+  
+      <div class="form-group">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" id="username" name="username" class="form-input" placeholder="Enter your username" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" id="password" name="password" class="form-input" placeholder="Enter your password" required>
+      </div>
+  
+      <div class="form-options">
+        <label class="remember-me">
+          <input type="checkbox" name="remember" class="form-checkbox">
+          Remember me
+        </label>
+        <a href="#" class="forgot-link">Forgot Password?</a>
+      </div>
+  
+      <button type="submit" class="login-submit">Login</button>
+  
+      <p class="signup-text">Don't have an account? <a href="register.html">Sign up</a></p>
+
+    </form>
+  </div>
+  
+</body>
+</html>
