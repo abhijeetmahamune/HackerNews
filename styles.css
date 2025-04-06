@@ -27,8 +27,7 @@ a:hover {
     color: #64b5f6;
 }
 .topnav {
-/*     background-color: #1e1e1e; */
-    background-color:transperent;
+    background-color: #1e1e1e;
     border-bottom: 1px solid #2c2c2c;
     padding: 10px 0;
   }
@@ -73,8 +72,8 @@ a:hover {
   }
   
   .nav-links a.active {
-/*     background-color: #333; */
-       background-color:transperent;
+ background-color: #333;
+       
     color: #ff9800;
   }
   
@@ -125,8 +124,7 @@ a:hover {
 
 /* Header */
 header {
-/*     background-color: #1e1e1e; */
-     background-color:transperent;
+     background-color: #1e1e1e;
     padding: 15px 20px;
     text-align: center;
     font-size: 24px;
@@ -155,8 +153,7 @@ header {
 }
 
 .news-item:hover {
-/*     background-color: #1a1a1a; */
-     background-color:transperent;
+     background-color: #1a1a1a; 
 }
 
 .news-item:last-child {
